@@ -1,6 +1,6 @@
 "use server";
 import { revalidateTag } from "next/cache";
-const url = process.env.NEXT_PUBLIC_APP_URL;
+const url = "http://localhost:3600";
 
 export type InputType = {
     title: string;      
