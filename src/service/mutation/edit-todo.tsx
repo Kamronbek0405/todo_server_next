@@ -11,11 +11,11 @@ export type InputType = {
 export const editItem = async (id: number, updatedData: InputType) => {
   try {
     const res = await fetch(`${url}/todos/${id}`, {
-      method: "PUT", // PUT yoki PATCH usulidan foydalanish
+      method: "PUT", 
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(updatedData), // Yangilangan ma'lumotlarni JSON formatida yuborish
+      body: JSON.stringify(updatedData), 
     });
 
     if (!res.ok) {
@@ -28,6 +28,6 @@ export const editItem = async (id: number, updatedData: InputType) => {
     const err = (error as Error).message;
     throw new Error(err);
   } finally {
-    revalidateTag("todos"); // Ma'lumotlar o'zgartirilgandan so'ng keshni qayta tasdiqlash
+    revalidateTag("todos"); 
   }
 };

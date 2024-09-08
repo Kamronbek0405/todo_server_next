@@ -1,6 +1,6 @@
 'use client';
 import { deleteItem } from '@/service/mutation/delete-todo';
-import { editItem } from '@/service/mutation/edit-todo'; // Edit funksiyasini import qilamiz
+import { editItem } from '@/service/mutation/edit-todo';
 import React from 'react';
 
 export type ObjectType = {
