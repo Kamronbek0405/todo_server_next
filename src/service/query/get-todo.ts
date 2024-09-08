@@ -1,5 +1,6 @@
 "use server";
-const url = process.env.APP_URL;
+const url = process.env.NEXT_PUBLIC_APP_URL;
+
 
 export type ObjectType = {
   title: string;      
