@@ -2,7 +2,6 @@ import { TodoCard } from "@/components/todo-card";
 import { getData } from "@/service/query/get-todo";
 import { FormTodo } from "@/components/form-todo";
 
-
 export default async function Home() {
 
   const data = await getData()
